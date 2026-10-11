@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Essays, stories, and dispatches from Kala Laya Nepal — Nepali theatre, ancient mask symbolism, living Paubha painting, and folk instruments.">
+  <title>Stories &amp; Blog | Kala Laya Nepal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Global Header -->
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Kala Laya Nepal Home">
+      <img src="logo.jpg" alt="Kala Laya Nepal Logo" class="brand-logo-img">
+      <span class="brand-copy">
+        <strong>KALA LAYA NEPAL</strong>
+        <small>Art · Theatre · Heritage</small>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="gallery.html">Gallery</a>
+      <a class="active" href="blog.html">Stories &amp; Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="share-link-btn btn-copy-login-link" type="button" title="Copy Login Link">
+        <span>🔗</span> Share Login Link
+      </button>
+      <button class="icon-button" type="button" aria-label="Search site" id="searchButton">
+        <svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 5 5"/></svg>
+      </button>
+      <a class="header-login-btn" href="login.html" id="headerLoginBtn">Log In</a>
+      <div class="header-user-badge">
+        <div class="header-user-avatar">KL</div>
+        <span class="header-user-info">Member</span>
+        <button class="logout-btn" type="button">Log Out</button>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero-banner">
+      <div class="page-hero-bg" style="background-image: url('art-workshop.jpg');"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <span class="page-hero-tag">Essays &amp; Field Notes</span>
+        <h1 class="page-hero-title">Stories from the Sacred Stage</h1>
+        <p class="page-hero-desc">Reflections on community theatre, tantric mask iconography, ancestral melodies, and the living spirit of Nepali creativity.</p>
+      </div>
+    </section>
+
+    <!-- Blog Articles Section -->
+    <section class="content-section" style="background:#fffcf7;">
+      <!-- Real-time Search Bar -->
+      <div class="blog-search-bar">
+        <input type="text" class="blog-search-input" id="blogSearchInput" placeholder="Search essays by topic (e.g. Mask, Theatre, Paubha, Music)...">
+      </div>
+
+      <!-- Articles Grid -->
+      <div class="blog-grid">
+        <!-- Story 1 -->
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="cover-bg.jpg" alt="Sacred Bhairav Mask" loading="lazy">
+            <span class="blog-meta-badge">Masks &amp; Myths</span>
+          </div>
+          <div class="blog-body">
+            <p class="blog-date">October 8, 2026 &bull; 6 min read</p>
+            <h3 class="blog-title">The Sacred Geometry of Nepali Wooden Masks: Tales of the Bhairav &amp; Lakhey</h3>
+            <p class="blog-excerpt">In the Kathmandu Valley, wooden masks are not museum ornaments. They are metaphysical portals. When an actor wears the Lakhey mask, personal ego dissolves into living ritual theatre.</p>
+            <button class="blog-read-btn" data-article-id="1" type="button">Read Full Story &rarr;</button>
+          </div>
+        </article>
+
+        <!-- Story 2 -->
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="theatre-stage.jpg" alt="Stage Play in Itahari" loading="lazy">
+            <span class="blog-meta-badge">Theatre</span>
+          </div>
+          <div class="blog-body">
+            <p class="blog-date">September 24, 2026 &bull; 5 min read</p>
+            <h3 class="blog-title">Theatre of Resilience: Bringing Stage Plays to Eastern Nepal</h3>
+            <p class="blog-excerpt">How Kalalaya transformed Itahari into an unlikely powerhouse for contemporary Nepali theatre, engaging housewives and youth in plays that confront pressing community issues.</p>
+            <button class="blog-read-btn" data-article-id="2" type="button">Read Full Story &rarr;</button>
+          </div>
+        </article>
+
+        <!-- Story 3 -->
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="art-workshop.jpg" alt="Fine Art Studio Session" loading="lazy">
+            <span class="blog-meta-badge">Visual Arts</span>
+          </div>
+          <div class="blog-body">
+            <p class="blog-date">September 12, 2026 &bull; 7 min read</p>
+            <h3 class="blog-title">Living Pigments: Paubha and Mithila Art in the Modern Era</h3>
+            <p class="blog-excerpt">From mineral stone pigments ground with mortar and pestle to delicate canvas strokes, discover how traditional Newari and Maithil painting techniques are speaking to a new generation.</p>
+            <button class="blog-read-btn" data-article-id="3" type="button">Read Full Story &rarr;</button>
+          </div>
+        </article>
+
+        <!-- Story 4 -->
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="nepali-music.jpg" alt="Folk Music Ensemble" loading="lazy">
+            <span class="blog-meta-badge">Acoustic Heritage</span>
+          </div>
+          <div class="blog-body">
+            <p class="blog-date">August 30, 2026 &bull; 4 min read</p>
+            <h3 class="blog-title">The Resonant Strings: The Sarangi and Basuri Storytelling Tradition</h3>
+            <p class="blog-excerpt">Before modern mass communication, the Gaine bards walked across Nepal chronicling human triumphs and sorrow. Explore how Kalalaya weaves acoustic folk music into stage narratives.</p>
+            <button class="blog-read-btn" data-article-id="4" type="button">Read Full Story &rarr;</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Social Showcase Strip -->
+    <section class="insta-showcase">
+      <div class="insta-showcase-inner">
+        <div class="insta-info">
+          <h2>Dispatches on Instagram</h2>
+          <p>Read micro-essays, rehearsals reflections, and artist interviews published weekly on our Instagram <strong>@kalalaya_</strong>.</p>
+          <div class="insta-links-box">
+            <a class="btn-insta" href="https://www.instagram.com/kalalaya_?rpxt=cjI1ZmZ6bnA2a3Ny" target="_blank" rel="noopener noreferrer">
+              <span>📷</span> Follow @kalalaya_
+            </a>
+            <button class="btn-share-inline btn-copy-login-link" type="button" style="padding:12px 20px;">
+              🔗 Share Login Link
+            </button>
+          </div>
+        </div>
+        <div class="insta-visual-grid">
+          <div class="insta-thumb"><img src="theatre-stage.jpg" alt="Theatre Stage"></div>
+          <div class="insta-thumb"><img src="cover-bg.jpg" alt="Mask Mask"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mountain Art Footer Silhouette -->
+    <section class="mountain-footer-art" aria-hidden="true">
+      <div class="mountain-ranges"></div>
+      <div class="temple-art">⌂</div>
+    </section>
+  </main>
+
+  <!-- Interactive Article Modal Dialog -->
+  <div class="article-modal-overlay" id="articleModal" aria-hidden="true" role="dialog">
+    <div class="article-modal-card">
+      <button class="modal-close-btn" id="articleModalClose" type="button" aria-label="Close article viewer">&times;</button>
+      <span class="section-tag" id="articleModalTag">Cultural Essay</span>
+      <h2 id="articleModalTitle">Article Title</h2>
+      <p id="articleModalMeta" style="color:#81756d; font-size:14px; margin:0 0 16px;"></p>
+      <img id="articleModalImg" class="article-modal-img" src="" alt="Article cover">
+      <div id="articleModalBody" class="article-body-text"></div>
+      <div style="margin-top:30px; padding-top:20px; border-top:1px solid #e4d7ca; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+        <span style="font-size:14px; color:#5c5049;">Published by <strong>Kala Laya Nepal</strong></span>
+        <button class="btn-share-inline btn-copy-login-link" type="button">🔗 Share Member Access</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <a class="footer-brand" href="index.html">
+          <img src="logo.jpg" alt="Kala Laya Nepal Logo" class="footer-logo-img">
+          <span><strong>KALA LAYA NEPAL</strong><small>Art · Theatre · Heritage</small></span>
+        </a>
+        <p style="margin-top:16px;">A dedicated non-profit theatre and cultural collective rooted in Itahari, Sunsari, Nepal. Dedicated to reviving folk performance, ritual dance, and sacred arts.</p>
+        <div class="footer-social-row">
+          <a class="social-icon-btn" href="https://www.instagram.com/kalalaya_?rpxt=cjI1ZmZ6bnA2a3Ny" target="_blank" rel="noopener noreferrer" title="Instagram @kalalaya_">◎</a>
+          <a class="social-icon-btn" href="https://www.facebook.com/kalalayanepal" target="_blank" rel="noopener noreferrer" title="Facebook">f</a>
+          <button class="social-icon-btn btn-copy-login-link" type="button" title="Copy Login Link">🔗</button>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul class="footer-links-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Kalalaya</a></li>
+          <li><a href="gallery.html">Visual &amp; Stage Gallery</a></li>
+          <li><a href="blog.html">Cultural Stories &amp; Blog</a></li>
+          <li><a href="contact.html">Contact &amp; Auditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Member Access</h4>
+        <ul class="footer-links-list">
+          <li><a href="login.html">Member Log In</a></li>
+          <li><a href="index.html#register">Create Account</a></li>
+          <li><a href="javascript:void(0)" class="btn-copy-login-link">Copy Shareable Login Link</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Stay Connected</h4>
+        <p>Get notified about upcoming theatre festivals, open call auditions, and cultural exhibitions.</p>
+        <form id="newsletterForm" style="display:flex; gap:8px;">
+          <input type="email" placeholder="Your email address" required style="flex:1; min-height:42px; border-radius:20px; border:1px solid #d5c3b1; padding:0 16px; background:#fffcf8; outline:none; font-size:13px;">
+          <button type="submit" style="min-height:42px; border-radius:20px; border:0; background:var(--rust); color:white; padding:0 18px; font-weight:600; cursor:pointer;">Join</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026 Kala Laya Nepal. All rights reserved. Registered Cultural &amp; Theatre Organization, Nepal.</div>
+      <div>Instagram: <a href="https://www.instagram.com/kalalaya_?rpxt=cjI1ZmZ6bnA2a3Ny" target="_blank" style="color:#ffd8ae;">@kalalaya_</a></div>
+    </div>
+  </footer>
+
+  <div id="toastContainer" class="toast-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>

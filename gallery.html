@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Visual gallery of Kala Laya Nepal — theatrical stage photography, sacred Lakhey masked dance, Paubha fine arts, and traditional folk music.">
+  <title>Gallery | Kala Laya Nepal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Global Header -->
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Kala Laya Nepal Home">
+      <img src="logo.jpg" alt="Kala Laya Nepal Logo" class="brand-logo-img">
+      <span class="brand-copy">
+        <strong>KALA LAYA NEPAL</strong>
+        <small>Art · Theatre · Heritage</small>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a class="active" href="gallery.html">Gallery</a>
+      <a href="blog.html">Stories &amp; Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="share-link-btn btn-copy-login-link" type="button" title="Copy Login Link">
+        <span>🔗</span> Share Login Link
+      </button>
+      <button class="icon-button" type="button" aria-label="Search site" id="searchButton">
+        <svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 5 5"/></svg>
+      </button>
+      <a class="header-login-btn" href="login.html" id="headerLoginBtn">Log In</a>
+      <div class="header-user-badge">
+        <div class="header-user-avatar">KL</div>
+        <span class="header-user-info">Member</span>
+        <button class="logout-btn" type="button">Log Out</button>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero-banner">
+      <div class="page-hero-bg" style="background-image: url('lakhey-dance.jpg');"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <span class="page-hero-tag">Visual Archives</span>
+        <h1 class="page-hero-title">Living Art &amp; Stage Gallery</h1>
+        <p class="page-hero-desc">Explore the vibrant visual record of Kala Laya Nepal: theatrical performances, sacred dances, workshop studios, and traditional woodcraft.</p>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="content-section" style="background:#fffcf7;">
+      <!-- Category Filter Bar -->
+      <div class="gallery-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Works</button>
+        <button class="filter-btn" data-filter="theatre">Stage Plays</button>
+        <button class="filter-btn" data-filter="dance">Sacred Dance</button>
+        <button class="filter-btn" data-filter="art">Fine Arts &amp; Painting</button>
+        <button class="filter-btn" data-filter="music">Folk Music</button>
+        <button class="filter-btn" data-filter="mask">Ritual Masks</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        <!-- Item 1: Theatre -->
+        <div class="gallery-item" data-category="theatre">
+          <img src="theatre-stage.jpg" alt="Kalalaya Theatre Stage Performance" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-tag">Stage Drama</span>
+            <h3 class="gallery-title">Echoes of the Village</h3>
+            <p class="gallery-sub">Live Theatre Festival &bull; Itahari Ensemble</p>
+          </div>
+        </div>
+
+        <!-- Item 2: Mask -->
+        <div class="gallery-item" data-category="mask">
+          <img src="cover-bg.jpg" alt="Bhairav Hand-Carved Wooden Mask" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-tag">Ritual Woodcraft</span>
+            <h3 class="gallery-title">Wrathful Bhairav</h3>
+            <p class="gallery-sub">Carved wood &bull; Traditional mineral pigment</p>
+          </div>
+        </div>
+
+        <!-- Item 3: Dance -->
+        <div class="gallery-item" data-category="dance">
+          <img src="lakhey-dance.jpg" alt="Sacred Lakhey Dance Performance" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-tag">Sacred Dance</span>
+            <h3 class="gallery-title">The Lakhey Awakening</h3>
+            <p class="gallery-sub">Durbar Square ritual celebration</p>
+          </div>
+        </div>
+
+        <!-- Item 4: Art -->
+        <div class="gallery-item" data-category="art">
+          <img src="art-workshop.jpg" alt="Paubha and Mithila Painting Studio" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-tag">Fine Arts Studio</span>
+            <h3 class="gallery-title">Hands of the Creators</h3>
+            <p class="gallery-sub">Youth &amp; Community Paubha Masterclass</p>
+          </div>
+        </div>
+
+        <!-- Item 5: Music -->
+        <div class="gallery-item" data-category="music">
+          <img src="nepali-music.jpg" alt="Folk Music Ensemble playing Sarangi and Madal" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-tag">Folk Music</span>
+            <h3 class="gallery-title">Strings of the Gandharva</h3>
+            <p class="gallery-sub">Sarangi, Madal &amp; Basuri live narrative</p>
+          </div>
+        </div>
+
+        <!-- Item 6: Theatre -->
+        <div class="gallery-item" data-category="theatre">
+          <img src="theatre-stage.jpg" alt="Actors performing on dramatic wooden stage" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-tag">Theatre Repertoire</span>
+            <h3 class="gallery-title">Voices of Sunlight &amp; Dust</h3>
+            <p class="gallery-sub">Community tour across Eastern Nepal</p>
+          </div>
+        </div>
+
+        <!-- Item 7: Dance -->
+        <div class="gallery-item" data-category="dance">
+          <img src="lakhey-dance.jpg" alt="Lakhey dancer leaping in red robes" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-tag">Sacred Dance</span>
+            <h3 class="gallery-title">Dance of the Deities</h3>
+            <p class="gallery-sub">Newari sacred festival tradition</p>
+          </div>
+        </div>
+
+        <!-- Item 8: Art -->
+        <div class="gallery-item" data-category="art">
+          <img src="art-workshop.jpg" alt="Young Nepali women painting Mithila art" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-tag">Fine Arts</span>
+            <h3 class="gallery-title">Vibrant Mithila Narratives</h3>
+            <p class="gallery-sub">Women's cultural painting collective</p>
+          </div>
+        </div>
+
+        <!-- Item 9: Mask -->
+        <div class="gallery-item" data-category="mask">
+          <img src="cover-bg.jpg" alt="Handcrafted Nepali Cultural Mask detail" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-tag">Heritage Craft</span>
+            <h3 class="gallery-title">Guardians of the Shrine</h3>
+            <p class="gallery-sub">Sacred woodcarving preservation project</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Showcase Strip -->
+    <section class="insta-showcase">
+      <div class="insta-showcase-inner">
+        <div class="insta-info">
+          <h2>More Visual Highlights on Instagram</h2>
+          <p>See high-resolution rehearsal reels, artist profiles, and behind-the-scenes photography on our Instagram handle <strong>@kalalaya_</strong>.</p>
+          <div class="insta-links-box">
+            <a class="btn-insta" href="https://www.instagram.com/kalalaya_?rpxt=cjI1ZmZ6bnA2a3Ny" target="_blank" rel="noopener noreferrer">
+              <span>📷</span> Visit @kalalaya_
+            </a>
+            <button class="btn-share-inline btn-copy-login-link" type="button" style="padding:12px 20px;">
+              🔗 Copy Member Login Link
+            </button>
+          </div>
+        </div>
+        <div class="insta-visual-grid">
+          <div class="insta-thumb"><img src="theatre-stage.jpg" alt="Stage Play"></div>
+          <div class="insta-thumb"><img src="lakhey-dance.jpg" alt="Dance Performance"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mountain Art Footer Silhouette -->
+    <section class="mountain-footer-art" aria-hidden="true">
+      <div class="mountain-ranges"></div>
+      <div class="temple-art">⌂</div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-overlay" id="lightboxModal" aria-hidden="true" role="dialog">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image preview">&times;</button>
+      <img id="lightboxImg" src="" alt="Full preview">
+      <div class="lightbox-caption">
+        <h3 id="lightboxTitle">Artwork Title</h3>
+        <p id="lightboxDesc">Artwork description</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <a class="footer-brand" href="index.html">
+          <img src="logo.jpg" alt="Kala Laya Nepal Logo" class="footer-logo-img">
+          <span><strong>KALA LAYA NEPAL</strong><small>Art · Theatre · Heritage</small></span>
+        </a>
+        <p style="margin-top:16px;">A dedicated non-profit theatre and cultural collective rooted in Itahari, Sunsari, Nepal. Dedicated to reviving folk performance, ritual dance, and sacred arts.</p>
+        <div class="footer-social-row">
+          <a class="social-icon-btn" href="https://www.instagram.com/kalalaya_?rpxt=cjI1ZmZ6bnA2a3Ny" target="_blank" rel="noopener noreferrer" title="Instagram @kalalaya_">◎</a>
+          <a class="social-icon-btn" href="https://www.facebook.com/kalalayanepal" target="_blank" rel="noopener noreferrer" title="Facebook">f</a>
+          <button class="social-icon-btn btn-copy-login-link" type="button" title="Copy Login Link">🔗</button>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul class="footer-links-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Kalalaya</a></li>
+          <li><a href="gallery.html">Visual &amp; Stage Gallery</a></li>
+          <li><a href="blog.html">Cultural Stories &amp; Blog</a></li>
+          <li><a href="contact.html">Contact &amp; Auditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Member Access</h4>
+        <ul class="footer-links-list">
+          <li><a href="login.html">Member Log In</a></li>
+          <li><a href="index.html#register">Create Account</a></li>
+          <li><a href="javascript:void(0)" class="btn-copy-login-link">Copy Shareable Login Link</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Stay Connected</h4>
+        <p>Get notified about upcoming theatre festivals, open call auditions, and cultural exhibitions.</p>
+        <form id="newsletterForm" style="display:flex; gap:8px;">
+          <input type="email" placeholder="Your email address" required style="flex:1; min-height:42px; border-radius:20px; border:1px solid #d5c3b1; padding:0 16px; background:#fffcf8; outline:none; font-size:13px;">
+          <button type="submit" style="min-height:42px; border-radius:20px; border:0; background:var(--rust); color:white; padding:0 18px; font-weight:600; cursor:pointer;">Join</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026 Kala Laya Nepal. All rights reserved. Registered Cultural &amp; Theatre Organization, Nepal.</div>
+      <div>Instagram: <a href="https://www.instagram.com/kalalaya_?rpxt=cjI1ZmZ6bnA2a3Ny" target="_blank" style="color:#ffd8ae;">@kalalaya_</a></div>
+    </div>
+  </footer>
+
+  <div id="toastContainer" class="toast-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>

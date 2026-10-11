@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Log in to Kala Laya Nepal — access member features, theatre auditions, workshops, and artist community.">
+  <title>Member Login | Kala Laya Nepal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Global Header -->
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Kala Laya Nepal Home">
+      <img src="logo.jpg" alt="Kala Laya Nepal Logo" class="brand-logo-img">
+      <span class="brand-copy">
+        <strong>KALA LAYA NEPAL</strong>
+        <small>Art · Theatre · Heritage</small>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="blog.html">Stories &amp; Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="share-link-btn btn-copy-login-link" type="button" title="Copy Login Link">
+        <span>🔗</span> Share Login Link
+      </button>
+      <button class="icon-button" type="button" aria-label="Search site" id="searchButton">
+        <svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 5 5"/></svg>
+      </button>
+      <a class="header-login-btn" href="login.html" id="headerLoginBtn" style="background:var(--rust); color:white;">Log In</a>
+      <div class="header-user-badge">
+        <div class="header-user-avatar">KL</div>
+        <span class="header-user-info">Member</span>
+        <button class="logout-btn" type="button">Log Out</button>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="registration-layout">
+      <!-- Culture Cover Panel -->
+      <aside class="culture-panel" aria-label="Kala Laya Nepal member access">
+        <div class="culture-overlay"></div>
+        <div class="cover-top-actions">
+          <span class="cover-eyebrow">कलालय नेपाल · MEMBER PORTAL</span>
+          <a href="index.html#register" class="cover-login-link">New? <strong>Register &rarr;</strong></a>
+        </div>
+        <div class="culture-content">
+          <div class="culture-logo-badge">
+            <img src="logo.jpg" alt="Kala Laya Nepal Logo" class="culture-logo-img">
+          </div>
+          <h2>KALA LAYA NEPAL</h2>
+          <p class="culture-tagline">Art · Theatre · Creativity</p>
+          <span class="short-rule"></span>
+          <p class="culture-description">Welcome to the artists' circle. Sign in to collaborate on upcoming theatre productions, workshops, and exhibitions.</p>
+          <div class="lotus-decoration" aria-hidden="true">❀</div>
+        </div>
+      </aside>
+
+      <!-- Login Form Side -->
+      <section class="form-side" aria-labelledby="loginTitle">
+        <div class="form-card">
+          <!-- Share Link Box on top for immediate sharing -->
+          <div class="share-link-box" style="margin-top:0; margin-bottom:28px;">
+            <p>🔗 Share this login page with other artists &amp; friends:</p>
+            <div class="share-link-actions">
+              <button class="share-action-btn btn-copy-login-link" type="button">📋 Copy Direct Link</button>
+              <button class="share-action-btn btn-share-whatsapp" type="button">💬 Share via WhatsApp</button>
+            </div>
+          </div>
+
+          <h1 id="loginTitle">Welcome Back</h1>
+          <p class="form-intro">Sign in to your Kala Laya Nepal account to access workshops and auditions.</p>
+
+          <form id="pageLoginForm" novalidate>
+            <div class="field">
+              <label for="pageEmail">Email Address <span>*</span></label>
+              <div class="input-wrap">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>
+                <input id="pageEmail" type="email" placeholder="example@domain.com (or demo@kalalaya.org)" autocomplete="email" required>
+              </div>
+              <small class="error-message" id="pageEmailError"></small>
+            </div>
+
+            <div class="field">
+              <label for="pagePassword">Password <span>*</span></label>
+              <div class="input-wrap">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="12" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v4"/></svg>
+                <input id="pagePassword" type="password" placeholder="Enter your password (demo: password123)" autocomplete="current-password" required>
+                <button class="visibility-toggle" type="button" data-target="pagePassword" aria-label="Show password">◉</button>
+              </div>
+              <small class="error-message" id="pagePasswordError"></small>
+            </div>
+
+            <div class="modal-actions-row" style="margin: 10px 0 18px;">
+              <label class="remember-label"><input type="checkbox" checked> Remember me</label>
+              <a href="#forgot" class="forgot-link">Forgot password?</a>
+            </div>
+
+            <button class="primary-button" type="submit">Sign In to Account <span aria-hidden="true">&rarr;</span></button>
+            <p class="form-status" id="pageLoginStatus" role="status" aria-live="polite"></p>
+
+            <div style="margin-top:22px; padding:12px; background:#f5ebd9; border-radius:10px; font-size:12.5px; color:#5b3c2a; text-align:center;">
+              <strong>Demo Credentials:</strong> Email: <code>demo@kalalaya.org</code> | Password: <code>password123</code>
+            </div>
+          </form>
+
+          <div class="login-divider"><span></span><p>Don't have an account yet?</p><span></span></div>
+          <a class="secondary-button" href="index.html#register">Create New Account</a>
+        </div>
+      </section>
+    </section>
+
+    <!-- Mountain Art Footer Silhouette -->
+    <section class="mountain-footer-art" aria-hidden="true">
+      <div class="mountain-ranges"></div>
+      <div class="temple-art">⌂</div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <a class="footer-brand" href="index.html">
+          <img src="logo.jpg" alt="Kala Laya Nepal Logo" class="footer-logo-img">
+          <span><strong>KALA LAYA NEPAL</strong><small>Art · Theatre · Heritage</small></span>
+        </a>
+        <p style="margin-top:16px;">A dedicated non-profit theatre and cultural collective rooted in Itahari, Sunsari, Nepal. Dedicated to reviving folk performance, ritual dance, and sacred arts.</p>
+        <div class="footer-social-row">
+          <a class="social-icon-btn" href="https://www.instagram.com/kalalaya_?rpxt=cjI1ZmZ6bnA2a3Ny" target="_blank" rel="noopener noreferrer" title="Instagram @kalalaya_">◎</a>
+          <a class="social-icon-btn" href="https://www.facebook.com/kalalayanepal" target="_blank" rel="noopener noreferrer" title="Facebook">f</a>
+          <button class="social-icon-btn btn-copy-login-link" type="button" title="Copy Login Link">🔗</button>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul class="footer-links-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Kalalaya</a></li>
+          <li><a href="gallery.html">Visual &amp; Stage Gallery</a></li>
+          <li><a href="blog.html">Cultural Stories &amp; Blog</a></li>
+          <li><a href="contact.html">Contact &amp; Auditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Member Access</h4>
+        <ul class="footer-links-list">
+          <li><a href="login.html">Member Log In</a></li>
+          <li><a href="index.html#register">Create Account</a></li>
+          <li><a href="javascript:void(0)" class="btn-copy-login-link">Copy Shareable Login Link</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Stay Connected</h4>
+        <p>Get notified about upcoming theatre festivals, open call auditions, and cultural exhibitions.</p>
+        <form id="newsletterForm" style="display:flex; gap:8px;">
+          <input type="email" placeholder="Your email address" required style="flex:1; min-height:42px; border-radius:20px; border:1px solid #d5c3b1; padding:0 16px; background:#fffcf8; outline:none; font-size:13px;">
+          <button type="submit" style="min-height:42px; border-radius:20px; border:0; background:var(--rust); color:white; padding:0 18px; font-weight:600; cursor:pointer;">Join</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026 Kala Laya Nepal. All rights reserved. Registered Cultural &amp; Theatre Organization, Nepal.</div>
+      <div>Instagram: <a href="https://www.instagram.com/kalalaya_?rpxt=cjI1ZmZ6bnA2a3Ny" target="_blank" style="color:#ffd8ae;">@kalalaya_</a></div>
+    </div>
+  </footer>
+
+  <div id="toastContainer" class="toast-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>
